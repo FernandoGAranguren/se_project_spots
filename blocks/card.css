@@ -4,11 +4,17 @@
 
 .card__title {
   margin: 12px 0 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #212121;
+  font-weight: 500;
+  line-height: 1;
 }
 
 .card__image {
   height: 413px;
-  width: 413px;
+  width: 100%;
   border-radius: 8px;
   object-fit: cover;
   display: block;
@@ -28,4 +34,14 @@
   border: none;
   background-color: transparent;
   opacity: 40%;
+}
+.card__like-button:hover {
+  cursor: pointer;
+  color: #212121;
+  opacity: 100%;
+}
+@media screen and (max-width: 627px) {
+  .card__image {
+    height: 318px;
+  }
 }
