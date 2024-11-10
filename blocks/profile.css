@@ -53,6 +53,7 @@
   width: 149px;
   height: 52px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  align-self: flex-end;
 }
 
 .profile__add-button:hover {
