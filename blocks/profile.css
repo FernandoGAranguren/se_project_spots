@@ -11,8 +11,7 @@
   height: 190px;
   width: 190px;
   margin-right: 20px;
-  border-radius: 20px;
-  overflow: hidden;
+  border-radius: 8px;
 }
 
 .profile__column {
@@ -46,19 +45,26 @@
 }
 
 .profile__add-button {
-  margin-left: auto;
+  margin: 0 0 0 auto;
   background-color: #212121;
   color: #fcf5e5;
   border-radius: 8px;
   width: 149px;
   height: 52px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  display: flex;
   align-self: flex-end;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  border: none;
 }
 
 .profile__add-button:hover {
   background-color: rgba(33, 33, 33, 0.8);
-  color: white;
   cursor: pointer;
 }
 
@@ -67,9 +73,11 @@
   border-style: none;
   max-width: fit-content;
   padding: 0;
-  color: #212121b2;
+  color: #212121;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 500;
+  line-height: 16px;
+  font-size: 16px;
 }
 .profile__edit-button:hover {
   color: #212121;
@@ -88,7 +96,6 @@
     margin: 0 0 12px;
     height: 80px;
     width: 80px;
-    color: #212121cc;
   }
 
   .profile__add-button {
