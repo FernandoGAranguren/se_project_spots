@@ -76,6 +76,7 @@
   background: none;
   border-style: none;
   max-width: fit-content;
+  margin-top: auto;
   padding: 0;
   gap: 8px;
   color: #212121;
