@@ -113,6 +113,35 @@
       <footer class="footer">
         <p class="footer__text">Fernando G. Aranguren &copy; 2024</p>
       </footer>
+      <div class="modal modal_opened">
+        <div class="modal__container">
+          <button class="modal__close-button" type="submit">
+            <img src="./images/close-button.svg" alt="close-button" />
+          </button>
+          <h2 class="modal__title">Edit profile</h2>
+          <form name="edit-profile" class="modal__form">
+            <label for="Name" class="modal__label"
+              >Name
+              <input
+                type="text"
+                id="name"
+                class="modal__input"
+                placeholder="Type you name"
+              />
+            </label>
+            <label for="description" class="modal__label"
+              >Description
+              <input
+                type="text"
+                id="description"
+                class="modal__input"
+                placeholder="Describe yourself"
+              />
+            </label>
+            <button class="modal__submit-button" type="submit">Save</button>
+          </form>
+        </div>
+      </div>
     </div>
     <script src="./scripts/index.js"></script>
   </body>
