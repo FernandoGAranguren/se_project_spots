@@ -39,18 +39,20 @@
         </section>
         <section class="cards page__section">
           <ul class="cards__list">
+            <template id="card-template">
             <li class="card">
               <img
-                src="images/1-photo-by-moritz-feldmann-from-pexels.jpg"
-                alt="Val Thorens"
+                src=""
+                alt=""
                 class="card__image"
               />
               <div class="card__content">
-                <h2 class="card__title">Val Thorens</h2>
+                <h2 class="card__title"></h2>
                 <button type="button" class="card__like-button"></button>
               </div>
             </li>
-            <li class="card">
+          </template>
+            <!-- <li class="card">
               <img
                 src="images/2-photo-by-ceiline-from-pexels.jpg"
                 alt="restaurant terrace"
@@ -107,7 +109,7 @@
                 <button type="button" class="card__like-button"></button>
               </div>
             </li>
-          </ul>
+          </ul> -->
         </section>
       </main>
       <footer class="footer">
@@ -120,20 +122,20 @@
           </button>
           <h2 class="modal__title">Edit profile</h2>
           <form name="edit-profile" class="modal__form">
-            <label for="Name" class="modal__label"
+            <label for="profile-name-input" class="modal__label"
               >Name
               <input
                 type="text"
-                id="name"
+                id="profile-name-input"
                 class="modal__input"
                 placeholder="Type you name"
               />
             </label>
-            <label for="description" class="modal__label"
+            <label for="profile-description-input" class="modal__label"
               >Description
               <input
                 type="text"
-                id="description"
+                id="profile-description-input"
                 class="modal__input"
                 placeholder="Describe yourself"
               />
