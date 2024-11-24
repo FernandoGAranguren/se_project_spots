@@ -40,6 +40,10 @@
   padding: 0px;
 }
 
+.modal__close-button:hover {
+  cursor: pointer;
+}
+
 .modal__title {
   max-width: 169px;
   margin: 0 0 32px;
@@ -67,6 +71,10 @@
   border-radius: 8px;
   background-color: #212121;
   color: #fcf5e5;
+}
+
+.modal__submit-button:hover {
+  cursor: pointer;
 }
 
 .modal__input {
