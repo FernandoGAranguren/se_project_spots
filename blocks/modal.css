@@ -161,7 +161,9 @@
   .modal__image {
     max-height: none;
     max-width: none;
-    width: 100%;
+    width: 288px;
+    display: flex;
+    align-self: center;
   }
 
   .modal__close_type_image-preview {
@@ -170,15 +172,23 @@
   }
 
   .modal__caption {
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 19.2px;
+    line-height: 16px;
+    font-weight: 500;
+    margin: 0;
+    position: relative;
+    top: 8px;
+    right: 4px;
+    text-wrap: auto;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
   }
 
   .modal__close-button_type_preview {
     top: -42px;
-    right: 0;
+    right: -12px;
   }
 }
+
 /* @media screen and (max-width: 627px) {
   .modal {
     padding: 0 10px;

@@ -84,13 +84,13 @@ function getCardElement(data) {
 
   cardsImageEl.addEventListener("click", () => {
     openModal(previewModal);
-    previewModalImageEl.textContent = data.name;
+    previewModalImageEl.alt = data.name;
     previewModalImageEl.src = data.link;
     previewModalCaptionEl.textContent = data.name;
   });
 
   cardDeleteButton.addEventListener("click", () => {
-    cardDeleteButton.closest(".card").remove();
+    cardElement.remove();
   });
 
   return cardElement;
@@ -116,6 +116,7 @@ function handleAddCardSubmit(evt) {
   const inputValues = { name: cardNameInput.value, link: cardLinkInput.value };
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
+  evt.target.reset();
 }
 
 cardSubmitButton.addEventListener("click", () => {
