@@ -1,5 +1,6 @@
 .card {
   max-width: 413px;
+  position: relative;
 }
 
 .card__title {
@@ -27,6 +28,24 @@
   justify-content: space-between;
   align-items: center;
   margin: 12px 0 0;
+}
+
+.delete__button {
+  background: transparent;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  height: 32px;
+  width: 32px;
+  padding: 0;
+}
+
+.delete__button:hover {
+  background-image: url(../images/delete-button-hover.svg);
+  cursor: pointer;
+  top: 10px;
+  right: 10px;
 }
 
 .card__like-button {
