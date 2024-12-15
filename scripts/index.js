@@ -116,12 +116,9 @@ function handleAddCardSubmit(evt) {
   const inputValues = { name: cardNameInput.value, link: cardLinkInput.value };
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
+  closeModal(cardModal);
   evt.target.reset();
 }
-
-cardSubmitButton.addEventListener("click", () => {
-  closeModal(cardModal);
-});
 
 profileEditButton.addEventListener("click", () => {
   editModalNameInput.value = profileName.textContent;
